@@ -1,0 +1,130 @@
+/* body {
+    background-color: whitesmoke;
+ } */
+
+ body {
+    animation: theme 21s linear infinite;
+}
+
+body:after,
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(0, 0, 0, 0.05);
+    animation: background 90s linear infinite;
+}
+
+body:after {
+    left: 15vw;
+}
+
+body:before {
+    right: 15vw;
+    animation-delay: -30s;
+    animation-direction: reverse;
+}
+
+@keyframes theme {
+    0% {
+        background: #FFFFF0;
+    }
+
+    16% {
+        background: #FAF9F6;
+    }
+    
+    33% {
+        background: #CCCCFF;
+    }
+
+    50% {
+        background: #FFFFF0;
+    }
+
+    66% {
+        background: #ADD8E6;
+    }
+
+    83% {
+        background: #EDEADE;
+    }
+
+    100% {
+        background: #FFFFF0;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ .form {
+    max-width: 500px;
+    border: 2px outset white;
+ }
+
+ input[type=text],
+ input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+ }
+
+ .button1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+ }
+
+ .button1:hover {
+    opacity: 0.8;
+ }
+
+ .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+ }
+
+ img.avatar {
+    width: 30%;
+    border-radius: 50%;
+ }
+
+ /*
+.container {
+padding: 16px;
+} */
+
+ span.psw {
+    float: right;
+    padding-top: 16px;
+    font-size: large;
+ }
+
+ /* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+ }
