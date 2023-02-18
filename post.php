@@ -56,7 +56,7 @@ $postcontent = $statement->fetchAll(PDO::FETCH_ASSOC);
       <div class="container">
 
          <nav class="navbar navbar-expand-lg navbar-white">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                <img class="img-fluid" width="150px" src="images/logo1.png" alt="LogBook">
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
